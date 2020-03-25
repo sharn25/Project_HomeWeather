@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    android:id="@+id/main_rl"
+    android:background="@color/sunny_day">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:scaleType="fitCenter"
+
+        android:layout_above="@+id/cloudtv"
+        android:layout_alignLeft="@+id/datetv"
+        android:layout_alignStart="@+id/datetv"
+        android:id="@+id/iconiv"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Current date"
+        android:textColor="@color/black"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/datetv" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:text="No City Info"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="1dp"
+        android:layout_below="@+id/datetv"
+        android:layout_alignLeft="@+id/datetv"
+        android:layout_alignStart="@+id/datetv"
+        android:id="@+id/citytv" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="--\u00B0"
+    android:textSize="100dp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="45dp"
+        android:textStyle="bold"
+        android:id="@+id/temptv"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/sperator"
+        android:layout_toStartOf="@+id/sperator" />
+    <ImageView
+        android:layout_width="0.2dp"
+        android:layout_height="110dp"
+        android:background="@color/black"
+        android:id="@+id/sperator"
+        android:layout_alignTop="@+id/temptv"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cloudiness:"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="5dp"
+        android:id="@+id/cloudlbtv"
+        android:layout_below="@+id/humlbtv"
+        android:layout_alignLeft="@+id/humlbtv"
+        android:layout_alignStart="@+id/humlbtv" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wind:"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        android:id="@+id/windlbtv"
+        android:layout_below="@+id/cloudlbtv"
+        android:layout_alignLeft="@+id/cloudlbtv"
+        android:layout_alignStart="@+id/cloudlbtv" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Humidity:"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_alignTop="@+id/sperator"
+        android:layout_toRightOf="@+id/sperator"
+        android:layout_toEndOf="@+id/sperator"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:id="@+id/humlbtv" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="--%"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:id="@+id/humtv"
+        android:layout_marginLeft="8dp"
+        android:layout_above="@+id/cloudlbtv"
+        android:layout_toRightOf="@+id/humlbtv"
+        android:layout_toEndOf="@+id/humlbtv" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="--%"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginLeft="8dp"
+        android:layout_alignBaseline="@+id/cloudlbtv"
+        android:layout_alignBottom="@+id/cloudlbtv"
+        android:layout_toRightOf="@+id/cloudlbtv"
+        android:layout_toEndOf="@+id/cloudlbtv"
+        android:id="@+id/cloudtv" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="N -- km/h"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginLeft="8dp"
+        android:layout_alignBaseline="@+id/windlbtv"
+        android:layout_alignBottom="@+id/windlbtv"
+        android:layout_toRightOf="@+id/windlbtv"
+        android:layout_toEndOf="@+id/windlbtv"
+        android:id="@+id/windtv" />
+
+
+</RelativeLayout>
